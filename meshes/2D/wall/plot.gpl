@@ -1,0 +1,13 @@
+plot 'robot.tri' u 1:2 with lines lw 3 lc rgb "red" notitle,\
+'env.tri' u 1:2 with lines lw 1 lc rgb "black" notitle,\
+'goal.tri' u 1:2 with lines lw 1 lc rgb "yellow" notitle,\
+'../../../files/nodes.txt' u 1:2 with lines lc rgb "#ff0000" notitle, \
+'../../../files/tree.txt' u 1:2 with lines lc rgb "green" notitle, \
+'../../../files/goal.txt' u 1:2 with lines lw 3 lc rgb "#346be9" notitle, \
+'../../../files/border.txt' u 1:2 lc rgb "yellow" notitle
+
+while (1) {
+    replot
+    pause 0.3
+}
+
